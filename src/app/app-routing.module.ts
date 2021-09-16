@@ -7,6 +7,7 @@ import {
 } from '@angular/router';
 import { LoginComponent } from './auth/pages/login/login.component';
 import { NotFoundComponent } from './auth/pages/not-found/not-found.component';
+import { AboutComponent } from './home/pages/about/about.component';
 import { HomeComponent } from './home/pages/home/home.component';
 import { DonationComponent } from './product/pages/donation/donation.component';
 import { ExchangeComponent } from './product/pages/exchange/exchange.component';
@@ -32,6 +33,10 @@ const routes: Routes = [
   {
     path: 'emprestimo',
     component: LoanComponent,
+  },
+  {
+    path: 'sobre',
+    component: AboutComponent,
   },
 ];
 
