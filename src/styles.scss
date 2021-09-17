@@ -35,10 +35,6 @@ body {
   background: var(--accent);
 }
 
-.navbar-dark .nav-item .nav-link {
-  color: var(--white) !important;
-}
-
 // ------------------------------------------------------------------------
 
 .masthead {
@@ -239,21 +235,6 @@ body {
 
 .fa-plus:before {
   color: darkgray;
-}
-
-// ------------------------------------------------------------------------
-
-.footer {
-  padding: 10px 0;
-  text-align: center;
-  background-color: var(--main);
-  color: var(--white);
-}
-
-.footer__copyright {
-  font-size: 90%;
-  line-height: 40px;
-  text-transform: none;
 }
 
 // ------------------------------------------------------------------------
