@@ -3,18 +3,26 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { AuthModule } from './auth/auth.module';
-import { HomeModule } from './home/home.module';
-import { ProductModule } from './product/product.module';
+import { LayoutsModule } from './layouts/layouts.module';
+import { AdminModule } from './modules/admin/admin.module';
+import { ApplicationModule } from './modules/application/application.module';
+import { AuthModule } from './modules/auth/auth.module';
+import { ModulesModule } from './modules/modules.module';
+import { SiteModule } from './modules/site/site.module';
+import { SharedModule } from './shared/shared.module';
 
 @NgModule({
   declarations: [AppComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    LayoutsModule,
+    ModulesModule,
+    SharedModule,
+    AdminModule,
+    ApplicationModule,
     AuthModule,
-    HomeModule,
-    ProductModule,
+    SiteModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

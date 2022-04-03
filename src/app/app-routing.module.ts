@@ -1,67 +1,51 @@
 import { NgModule } from '@angular/core';
-import {
-  PreloadAllModules,
-  Router,
-  RouterModule,
-  Routes,
-} from '@angular/router';
-import { LoginComponent } from './auth/pages/login/login.component';
-import { NotFoundComponent } from './auth/pages/not-found/not-found.component';
-import { AboutComponent } from './home/pages/about/about.component';
-import { HomeComponent } from './home/pages/home/home.component';
-import { DonationComponent } from './product/pages/donation/donation.component';
-import { ExchangeComponent } from './product/pages/exchange/exchange.component';
-import { LoanComponent } from './product/pages/loan/loan.component';
+import { RouterModule, Routes } from '@angular/router';
+import { AuthenticationComponent } from './layouts/pages/authentication/authentication.component';
+import { MasterPageComponent } from './layouts/pages/master-page/master-page.component';
+import { DonationComponent } from './modules/application/pages/donation/donation.component';
+import { ExchangeComponent } from './modules/application/pages/exchange/exchange.component';
+import { HomeComponent } from './modules/application/pages/home/home.component';
+import { LoanComponent } from './modules/application/pages/loan/loan.component';
+import { LoginComponent } from './modules/auth/pages/login/login.component';
+import { NotFoundComponent } from './modules/auth/pages/not-found/not-found.component';
+import { AboutComponent } from './modules/site/pages/about/about.component';
+import { SignupComponent } from './modules/site/pages/signup/signup.component';
 
 const routes: Routes = [
+  // {
+  //   path: '',
+  //   component: MasterPageComponent,
+  //   children: [
+  //     { path: 'dashboard', component: DashboardComponent },
+  //   ],
+  //   canActivate: [AuthGuard],
+  // },
   {
     path: '',
-    component: HomeComponent,
+    component: MasterPageComponent,
+    children: [
+      { path: '', component: HomeComponent },
+      { path: 'cadastrar', component: SignupComponent },
+      { path: 'troca', component: ExchangeComponent },
+      { path: 'doacao', component: DonationComponent },
+      { path: 'emprestimo', component: LoanComponent },
+      { path: 'sobre', component: AboutComponent },
+    ],
   },
   {
-    path: 'login',
-    component: LoginComponent,
+    path: '',
+    component: AuthenticationComponent,
+    children: [
+      { path: '', redirectTo: 'login', pathMatch: 'full' },
+      { path: 'login', component: LoginComponent },
+    ],
   },
-  {
-    path: 'troca',
-    component: ExchangeComponent,
-  },
-  {
-    path: 'doacao',
-    component: DonationComponent,
-  },
-  {
-    path: 'emprestimo',
-    component: LoanComponent,
-  },
-  {
-    path: 'sobre',
-    component: AboutComponent,
-  },
-];
-
-const defaultRoutes: Routes = [
-  {
-    path: '404',
-    component: NotFoundComponent,
-  },
-  {
-    path: '**',
-    redirectTo: '/404',
-  },
+  { path: '404', component: NotFoundComponent },
+  { path: '**', redirectTo: '/404' },
 ];
 
 @NgModule({
-  imports: [
-    RouterModule.forRoot([...routes, ...defaultRoutes], {
-      scrollPositionRestoration: 'disabled',
-      preloadingStrategy: PreloadAllModules,
-    }),
-  ],
+  imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule],
 })
-export class AppRoutingModule {
-  constructor(private router: Router) {
-    router.resetConfig([...routes, ...defaultRoutes]);
-  }
-}
+export class AppRoutingModule {}

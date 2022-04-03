@@ -1,18 +1,23 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { ProductRoutingModule } from './product-routing.module';
+import { ApplicationRoutingModule } from './application-routing.module';
+import { HomeComponent } from './pages/home/home.component';
 import { DonationComponent } from './pages/donation/donation.component';
 import { ExchangeComponent } from './pages/exchange/exchange.component';
 import { LoanComponent } from './pages/loan/loan.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
-import { SharedModule } from '../shared/shared.module';
-import { DetailComponent } from './pages/detail/detail.component';
+import { SharedModule } from 'src/app/shared/shared.module';
 
 @NgModule({
-  declarations: [DonationComponent, ExchangeComponent, LoanComponent, DetailComponent],
+  declarations: [
+    HomeComponent,
+    DonationComponent,
+    ExchangeComponent,
+    LoanComponent,
+  ],
   imports: [
     CommonModule,
     RouterModule,
@@ -20,7 +25,7 @@ import { DetailComponent } from './pages/detail/detail.component';
     ReactiveFormsModule,
     HttpClientModule,
     SharedModule,
-    ProductRoutingModule,
+    ApplicationRoutingModule,
   ],
 })
-export class ProductModule {}
+export class ApplicationModule {}
