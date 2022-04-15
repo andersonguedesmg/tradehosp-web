@@ -8,9 +8,13 @@ import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { SharedModule } from 'src/app/shared/shared.module';
+import { HeaderComponent } from './components/header/header.component';
+import { FaqComponent } from './components/faq/faq.component';
+import { WhatWeDoComponent } from './components/what-we-do/what-we-do.component';
+import { AboutUsComponent } from './components/about-us/about-us.component';
 
 @NgModule({
-  declarations: [AboutComponent, SignupComponent],
+  declarations: [AboutComponent, SignupComponent, HeaderComponent, FaqComponent, WhatWeDoComponent, AboutUsComponent],
   imports: [
     CommonModule,
     RouterModule,
