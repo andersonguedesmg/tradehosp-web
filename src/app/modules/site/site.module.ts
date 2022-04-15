@@ -12,9 +12,18 @@ import { HeaderComponent } from './components/header/header.component';
 import { FaqComponent } from './components/faq/faq.component';
 import { WhatWeDoComponent } from './components/what-we-do/what-we-do.component';
 import { AboutUsComponent } from './components/about-us/about-us.component';
+import { NavbarSiteComponent } from './components/navbar-site/navbar-site.component';
 
 @NgModule({
-  declarations: [AboutComponent, SignupComponent, HeaderComponent, FaqComponent, WhatWeDoComponent, AboutUsComponent],
+  declarations: [
+    AboutComponent,
+    SignupComponent,
+    HeaderComponent,
+    FaqComponent,
+    WhatWeDoComponent,
+    AboutUsComponent,
+    NavbarSiteComponent,
+  ],
   imports: [
     CommonModule,
     RouterModule,
