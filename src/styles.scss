@@ -16,10 +16,12 @@
   --main: #5f259f;
   --base: #8a5bbe;
   --accent: #bea2dd;
+  --darkgray: #a9a9a9;
   --font1: "Roboto", sans-serif;
   --font2: "Heebo", sans-serif;
 }
 
+// COMMON
 body {
   font-family: var(--font1) !important;
   background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
@@ -54,86 +56,7 @@ body {
   color: #919191;
 }
 
-// ------------------------------------------------------------------------
-
-.masthead {
-  padding: 3rem 0 7rem;
-  position: relative;
-  background-color: #5f259f;
-  background-size: cover;
-  z-index: 0;
-}
-
-.masthead__btn {
-  background: rgba(255, 255, 255, 0.8) !important;
-  color: var(--main) !important;
-  fill: var(--main) !important;
-  border: none;
-  text-decoration: none;
-  outline: 0;
-  border-radius: 100px !important;
-  font-size: 0.9rem !important;
-  font-weight: 500 !important;
-  text-transform: uppercase;
-  padding: 5px 35px 5px 35px !important;
-}
-
-.masthead__btn--smaller {
-  padding: 5px 25px 5px 25px !important;
-}
-
-.masthead__btn:hover,
-.masthead__btn:focus-visible,
-.masthead__btn:focus {
-  box-shadow: -1px 6px 13px rgba(37, 15, 62, 0.35) !important;
-}
-
-.masthead svg.wave {
-  position: absolute;
-  bottom: -1px;
-  left: 0;
-}
-
-.masthead h1 {
-  color: #fff;
-  font-weight: 700;
-  font-size: 2rem;
-  line-height: 1.1;
-  z-index: 1;
-}
-
-.masthead h2 {
-  color: rgba(255, 255, 255, 0.6);
-  font-weight: 600;
-  z-index: 1;
-  font-size: 1.2rem;
-}
-
-.masthead a {
-  color: rgba(255, 255, 255, 0.8);
-  text-decoration: underline;
-  z-index: 1;
-}
-
-.masthead a:hover {
-  color: #fff;
-}
-
-.masthead a:active {
-  text-decoration: none;
-}
-
-@media (min-width: 992px) {
-  .masthead h1 {
-    font-size: 3rem;
-  }
-  .masthead h2 {
-    font-size: 1.5rem;
-  }
-}
-
-// ------------------------------------------------------------------------
-
+// CARD PRODUCTS
 .container-fluid {
   max-width: 1200px;
 }
@@ -202,6 +125,28 @@ body {
   }
 }
 
+.card-title {
+  font-weight: 600 !important;
+}
+
+.card-product__badge {
+  font-size: 0.85rem !important;
+  background-color: var(--base);
+}
+
+.card-product__label {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--darkgray);
+}
+
+.card-product__title {
+  font-size: 1.15rem;
+  font-weight: 900;
+  color: var(--black);
+}
+
+// BUTTONS
 .btn-call-action--outline {
   border-radius: 100px !important;
   background: transparent;
@@ -236,40 +181,3 @@ body {
     padding: 5px 30px 5px 30px;
   }
 }
-
-.card-product__badge {
-  font-size: 1rem !important;
-  background-color: var(--base);
-}
-
-.card-product__label--middle {
-  font-size: 1rem;
-  font-weight: 600;
-  color: darkgray;
-}
-
-.fa-question-circle:before {
-  color: darkgray;
-}
-
-.fa-plus:before {
-  color: darkgray;
-}
-
-// ------------------------------------------------------------------------
-
-// .card-product__btn {
-//   background: none var(--main) !important;
-//   color: var(--white) !important;
-//   fill: var(--white) !important;
-//   border: none;
-//   text-decoration: none;
-//   outline: 0;
-//   box-shadow: -1px 6px 19px rgba(37, 15, 62, 0.25);
-//   border-radius: 100px;
-// }
-
-// .card-product__btn:hover {
-//   background: none var(--base) !important;
-//   box-shadow: -1px 6px 13px rgba(37, 15, 62, 0.3);
-// }
