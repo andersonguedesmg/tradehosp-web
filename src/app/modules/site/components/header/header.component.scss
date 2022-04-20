@@ -1,13 +1,13 @@
 .header {
   padding: 3rem 0 7rem;
   position: relative;
-  background-color: #ffffff;
+  background-color: var(--white);
   background-size: cover;
   z-index: 0;
 }
 
 .header h1 {
-  color: #5f249f;
+  color: var(--main);
   font-weight: 700;
   font-size: 2rem;
   line-height: 1.1;
@@ -15,7 +15,7 @@
 }
 
 .header h2 {
-  color: #bea2dd;
+  color: var(--accent);
   font-weight: 600;
   z-index: 1;
   font-size: 1.2rem;

@@ -17,6 +17,8 @@
   --base: #8a5bbe;
   --accent: #bea2dd;
   --darkgray: #a9a9a9;
+  --gray: #f3f3f3;
+  --green: #8bc34a;
   --font1: "Roboto", sans-serif;
   --font2: "Heebo", sans-serif;
 }
@@ -47,13 +49,30 @@ body {
   text-transform: uppercase;
   margin-bottom: 20px;
   padding-bottom: 0;
-  color: #5f259f;
+  color: var(--main);
 }
 
 .section-title p {
   margin-bottom: 0;
   font-size: 14px;
-  color: #919191;
+  color: var(--darkgray);
+}
+
+// SCROLLBAR
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+  background-color: var(--white);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar {
+  width: 11px;
+  background-color: var(--white);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--accent);
 }
 
 // CARD PRODUCTS
@@ -89,7 +108,7 @@ body {
 
 .card-product__label--top {
   position: absolute;
-  background-color: #8bc34a;
+  background-color: var(--green);
   color: var(--white);
   top: 8px;
   right: 8px;

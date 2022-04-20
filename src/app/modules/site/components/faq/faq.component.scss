@@ -1,15 +1,15 @@
 .faq {
   padding: 3rem 0 7rem;
-  background-color: #ffffff;
+  background-color: var(--white);
 }
 
 .faq .accordion-button {
-  background-color: #f3f3f3;
+  background-color: var(--gray);
 }
 
 .faq .accordion-button:not(.collapsed) {
-  color: #000;
-  background-color: #bea2dd;
+  color: var(--black);
+  background-color: var(--accent);
 }
 
 .faq .accordion-button:focus {

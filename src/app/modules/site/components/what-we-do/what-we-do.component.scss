@@ -1,13 +1,13 @@
 .what-we-do {
   padding: 1rem 0 1rem;
-  background-color: #bea2dd;
+  background-color: var(--accent);
 }
 
 .what-we-do .content {
   padding: 30px;
-  background: #5f259f;
+  background: var(--main);
   border-radius: 10px;
-  color: #fff;
+  color: var(--white);
 }
 
 .what-we-do .content h3 {
@@ -23,7 +23,7 @@
 .what-we-do .icon-boxes .icon-box {
   text-align: center;
   border-radius: 1rem;
-  background: #fff;
+  background: var(--white);
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
   padding: 40px 30px;
   width: 100%;
@@ -31,7 +31,7 @@
 
 .what-we-do .icon-boxes .icon-box i {
   font-size: 40px;
-  color: #5f259f;
+  color: var(--main);
   margin-bottom: 30px;
 }
 
@@ -43,5 +43,6 @@
 
 .what-we-do .icon-boxes .icon-box p {
   font-size: 15px;
-  color: #848484;
+  font-weight: 500;
+  color: var(--darkgray);
 }
