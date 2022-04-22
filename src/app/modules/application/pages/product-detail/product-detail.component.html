@@ -1,0 +1,213 @@
+<app-navbar></app-navbar>
+
+<div class="container profile-container">
+  <form method="post">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="profile-img">
+          <img src="../assets/images/undraw_profile.png" />
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="profile-head">
+          <h5>Item Disponível</h5>
+          <h6>Empréstimo</h6>
+
+          <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link active"
+                id="profile-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#profile"
+                type="button"
+                role="tab"
+                aria-controls="profile"
+                aria-selected="true"
+              >
+                Item
+              </button>
+            </li>
+
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link"
+                id="responsible-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#responsible"
+                type="button"
+                role="tab"
+                aria-controls="responsible"
+                aria-selected="true"
+              >
+                Responsável
+              </button>
+            </li>
+
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link"
+                id="address-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#address"
+                type="button"
+                role="tab"
+                aria-controls="address"
+                aria-selected="false"
+              >
+                Endereço
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="profile-useful">
+          <p>Úteis</p>
+          <a href="">Conversar com Responsável</a><br />
+          <a href="">Ver Disponibilidade</a><br />
+          <a href="">Troquei de Empregador</a>
+        </div>
+      </div>
+
+      <div class="col-md-8">
+        <div class="tab-content profile-tab" id="myTabContent">
+          <div
+            class="tab-pane fade show active"
+            id="profile"
+            role="tabpanel"
+            aria-labelledby="profile-tab"
+          >
+            <div class="row">
+              <div class="col-md-6">
+                <label>Item</label>
+              </div>
+              <div class="col-md-6">
+                <p>Nome do Item</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <label>Quantidade</label>
+              </div>
+              <div class="col-md-6">
+                <p>14 Unidade(s)</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <label>Validade</label>
+              </div>
+              <div class="col-md-6">
+                <p>22/04/2022</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <label>Lote de Fabricação</label>
+              </div>
+              <div class="col-md-6">
+                <p>1234567890</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <label>Descrição</label>
+              </div>
+              <div class="col-md-6">
+                <p>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Veniam quidem eaque ut eveniet
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="tab-pane fade show"
+            id="responsible"
+            role="tabpanel"
+            aria-labelledby="responsible-tab"
+          >
+            <div class="row">
+              <div class="col-md-6">
+                <label>Nome</label>
+              </div>
+              <div class="col-md-6">
+                <p>Mark Greene</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <label>Parceiro</label>
+              </div>
+              <div class="col-md-6">
+                <p>UPA 24 horas - Elisa Sbrissa Franchozza</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <label>Telefone</label>
+              </div>
+              <div class="col-md-6">
+                <p>12 3456-7890</p>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="tab-pane fade"
+            id="address"
+            role="tabpanel"
+            aria-labelledby="address-tab"
+          >
+            <div class="row">
+              <div class="col-md-6">
+                <label>Logradouro</label>
+              </div>
+              <div class="col-md-6">
+                <p>Av. Irineu Carroci, 400</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <label>Bairro</label>
+              </div>
+              <div class="col-md-6">
+                <p>Jardim Jose Ometto II</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <label>Localidade</label>
+              </div>
+              <div class="col-md-6">
+                <p>Araras</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <label>UF</label>
+              </div>
+              <div class="col-md-6">
+                <p>SP</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <label>CEP</label>
+              </div>
+              <div class="col-md-6">
+                <p>13606-414</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </form>
+</div>
+
+<app-footer></app-footer>

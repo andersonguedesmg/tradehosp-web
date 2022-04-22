@@ -12,6 +12,8 @@ import { RouterModule } from '@angular/router';
 import { SharedModule } from 'src/app/shared/shared.module';
 import { ProductRegisterComponent } from './pages/product-register/product-register.component';
 import { NgxMaskModule } from 'ngx-mask';
+import { ProfileComponent } from './pages/profile/profile.component';
+import { ProductDetailComponent } from './pages/product-detail/product-detail.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +22,8 @@ import { NgxMaskModule } from 'ngx-mask';
     ExchangeComponent,
     LoanComponent,
     ProductRegisterComponent,
+    ProfileComponent,
+    ProductDetailComponent,
   ],
   imports: [
     CommonModule,
