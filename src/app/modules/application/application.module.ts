@@ -10,6 +10,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { SharedModule } from 'src/app/shared/shared.module';
+import { ProductRegisterComponent } from './pages/product-register/product-register.component';
+import { NgxMaskModule } from 'ngx-mask';
 
 @NgModule({
   declarations: [
@@ -17,6 +19,7 @@ import { SharedModule } from 'src/app/shared/shared.module';
     DonationComponent,
     ExchangeComponent,
     LoanComponent,
+    ProductRegisterComponent,
   ],
   imports: [
     CommonModule,
@@ -26,6 +29,7 @@ import { SharedModule } from 'src/app/shared/shared.module';
     HttpClientModule,
     SharedModule,
     ApplicationRoutingModule,
+    NgxMaskModule.forChild(),
   ],
 })
 export class ApplicationModule {}

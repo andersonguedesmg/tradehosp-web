@@ -37,14 +37,31 @@
 >
   <div class="container justify-content-center justify-content-md-between">
     <ul class="navbar-nav flex-row">
-      <li class="nav-item me-2 me-lg-0">
-        <a class="nav-link" href="">
+      <li class="nav-item dropdown">
+        <a
+          class="nav-link"
+          id="navbarScrollingDropdown"
+          role="button"
+          data-bs-toggle="dropdown"
+          aria-expanded="false"
+        >
           <i class="fas fa-bars me-2"></i>
-          <span>Categorias</span>
+          <span>Parceiros</span>
         </a>
-      </li>
-      <li class="nav-item me-2 me-lg-0 d-none d-md-inline-block">
-        <a class="nav-link" [routerLink]="'/troca'">Trocas</a>
+        <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+          <li><a class="dropdown-item" href="#">Santa Casa de Araras</a></li>
+          <li><a class="dropdown-item" href="#">Hospital Unimed Araras</a></li>
+          <li><a class="dropdown-item" href="#">Hospital Pró-Saúde</a></li>
+          <li><hr class="dropdown-divider" /></li>
+          <li>
+            <a class="dropdown-item" href="#"
+              >UPA 24 horas - Elisa Sbrissa Franchozza</a
+            >
+          </li>
+          <li>
+            <a class="dropdown-item" href="#">Dispensário da Saúde Araras</a>
+          </li>
+        </ul>
       </li>
       <li class="nav-item me-2 me-lg-0 d-none d-md-inline-block">
         <a class="nav-link" [routerLink]="'/doacao'">Doações</a>

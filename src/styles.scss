@@ -58,6 +58,12 @@ body {
   color: var(--darkgray);
 }
 
+.form-control:focus,
+.form-select:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 0.25rem rgb(95 37 159 / 25%);
+}
+
 // SCROLLBAR
 ::-webkit-scrollbar-track {
   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);

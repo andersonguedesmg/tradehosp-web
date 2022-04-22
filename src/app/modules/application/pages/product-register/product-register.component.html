@@ -1,0 +1,79 @@
+<app-navbar></app-navbar>
+
+<div class="container my-4 p-3" style="position: relative">
+  <div class="section-title">
+    <h2>Cadastrar Item Disponível</h2>
+    <p>
+      Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex
+      aliquid fuga eum quidem.
+    </p>
+  </div>
+  <div class="row align-items-center">
+    <div class="col-lg-8">
+      <div class="mb-3">
+        <label for="name" class="form-label">Item</label>
+        <input class="form-control" type="text" id="name" />
+      </div>
+    </div>
+    <div class="col-lg-2">
+      <div class="mb-3">
+        <label for="quantity" class="form-label">Quantidade</label>
+        <input class="form-control" type="text" id="quantity" />
+      </div>
+    </div>
+    <div class="col-lg-2">
+      <div class="mb-3">
+        <label for="unity" class="form-label">Unidade</label>
+        <select class="form-select" id="unity">
+          <option value="1">Unidade</option>
+          <option value="2">Caixa</option>
+          <option value="3">Pacote</option>
+          <option value="4">Litro</option>
+        </select>
+      </div>
+    </div>
+    <div class="col-lg-2">
+      <div class="mb-3">
+        <label for="validity" class="form-label">Validade</label>
+        <input
+          class="form-control"
+          type="text"
+          id="validity"
+          mask="00/00/0000"
+        />
+      </div>
+    </div>
+    <div class="col-lg-3">
+      <div class="mb-3">
+        <label for="local" class="form-label">Local</label>
+        <input class="form-control" type="text" id="local" />
+      </div>
+    </div>
+    <div class="col-lg-3">
+      <div class="mb-3">
+        <label for="productionBatch" class="form-label"
+          >Lote de Fabricação</label
+        >
+        <input class="form-control" type="text" id="productionBatch" />
+      </div>
+    </div>
+    <div class="col-lg-4">
+      <div class="mb-3">
+        <label for="type" class="form-label">Disponibilidade</label>
+        <select class="form-select" id="type">
+          <option value="1">Empréstimo</option>
+          <option value="2">Doação</option>
+          <option value="3">Empréstimo ou Doação</option>
+        </select>
+      </div>
+    </div>
+    <div class="col-lg-12">
+      <div class="mb-3">
+        <label for="description" class="form-label">Descrição</label>
+        <textarea class="form-control" id="description" rows="3"></textarea>
+      </div>
+    </div>
+  </div>
+</div>
+
+<app-footer></app-footer>
