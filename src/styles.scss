@@ -206,3 +206,37 @@ body {
     padding: 5px 30px 5px 30px;
   }
 }
+
+.btn-primary {
+  background: var(--main);
+  color: var(--white);
+  border: solid 1px var(--main);
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.btn-primary:hover,
+.btn-primary:focus-visible,
+.btn-primary:focus {
+  background: none var(--base);
+  border: solid 1px var(--base);
+  box-shadow: 0 0 0 0.25rem rgb(95 37 159 / 25%) !important;
+  color: var(--white);
+}
+
+.btn-outline-primary {
+  background: transparent;
+  color: var(--main);
+  border: solid 1px var(--main);
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.btn-outline-primary:hover,
+.btn-outline-primary:focus-visible,
+.btn-outline-primary:focus {
+  background: none var(--base);
+  color: var(--white);
+  box-shadow: 0 0 0 0.25rem rgb(95 37 159 / 25%) !important;
+  border: solid 1px var(--main);
+}

@@ -244,7 +244,52 @@
       aria-label="Close"
     ></button>
   </div>
-  <div class="offcanvas-body">...</div>
+  <div class="offcanvas-body">
+    <div class="row align-items-center">
+      <div class="col-lg-12">
+        <div class="mb-3">
+          <label for="oldPassword" class="form-label">Senha atual:</label>
+          <input
+            class="form-control"
+            type="text"
+            id="oldPassword"
+            [formControl]="oldPassword"
+          />
+        </div>
+      </div>
+      <div class="col-lg-12">
+        <div class="mb-3">
+          <label for="newPassword" class="form-label">Nova senha:</label>
+          <input
+            class="form-control"
+            type="text"
+            id="newPassword"
+            [formControl]="newPassword"
+          />
+        </div>
+      </div>
+      <div class="col-lg-12">
+        <div class="mb-3">
+          <label for="repeatNewPassword" class="form-label"
+            >Confirme a nova senha:</label
+          >
+          <input
+            class="form-control"
+            type="text"
+            id="repeatNewPassword"
+            [formControl]="repeatNewPassword"
+          />
+        </div>
+      </div>
+      <div class="col-lg-12">
+        <div class="mt-4">
+          <button class="btn btn-primary" style="margin-right: 10px">
+            Salvar
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
 
 <div
@@ -262,7 +307,50 @@
       aria-label="Close"
     ></button>
   </div>
-  <div class="offcanvas-body">...</div>
+  <div class="offcanvas-body">
+    <div class="row align-items-center">
+      <div class="col-lg-12">
+        <div class="mb-3">
+          <label for="name" class="form-label">Nome:</label>
+          <input
+            class="form-control"
+            type="text"
+            id="name"
+            [formControl]="name"
+          />
+        </div>
+      </div>
+      <div class="col-lg-12">
+        <div class="mb-3">
+          <label for="email" class="form-label">Email:</label>
+          <input
+            class="form-control"
+            type="text"
+            id="email"
+            [formControl]="email"
+          />
+        </div>
+      </div>
+      <div class="col-lg-12">
+        <div class="mb-3">
+          <label for="phone" class="form-label">Telefone:</label>
+          <input
+            class="form-control"
+            type="text"
+            id="phone"
+            [formControl]="phone"
+          />
+        </div>
+      </div>
+      <div class="col-lg-12">
+        <div class="mt-4">
+          <button class="btn btn-primary" style="margin-right: 10px">
+            Salvar
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
 
 <div
@@ -280,7 +368,29 @@
       aria-label="Close"
     ></button>
   </div>
-  <div class="offcanvas-body">...</div>
+  <div class="offcanvas-body">
+    <div class="row align-items-center">
+      <div class="col-lg-12">
+        <div class="mb-3">
+          <label for="employerId" class="form-label">Empregador:</label>
+          <select class="form-select" id="unity" [formControl]="employerId">
+            <option value="1">Santa Casa de Araras</option>
+            <option value="2">Hospital Unimed Araras</option>
+            <option value="3">Hospital Pró-Saúde</option>
+            <option value="4">UPA 24 horas - Elisa Sbrissa Franchozza</option>
+            <option value="5">Dispensário da Saúde Araras</option>
+          </select>
+        </div>
+      </div>
+      <div class="col-lg-12">
+        <div class="mt-4">
+          <button class="btn btn-primary" style="margin-right: 10px">
+            Salvar
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
 
 <app-footer></app-footer>

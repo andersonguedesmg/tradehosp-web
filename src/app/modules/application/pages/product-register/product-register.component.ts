@@ -63,4 +63,8 @@ export class ProductRegisterComponent implements OnInit {
   }
 
   ngOnInit(): void {}
+
+  clearForm() {
+    this.form.reset();
+  }
 }
