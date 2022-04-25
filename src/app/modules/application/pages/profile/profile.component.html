@@ -68,9 +68,24 @@
       <div class="col-md-4">
         <div class="profile-useful">
           <p>Úteis</p>
-          <a href="">Trocar Senha</a><br />
-          <a href="">Editar Usuário</a><br />
-          <a href="">Troquei de Empregador</a>
+          <a
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasChangePassword"
+            aria-controls="offcanvasChangePassword"
+            >Trocar Senha</a
+          ><br />
+          <a
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasEditUser"
+            aria-controls="offcanvasEditUser"
+            >Editar Usuário</a
+          ><br />
+          <a
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasChangedEmployer"
+            aria-controls="offcanvasChangedEmployer"
+            >Troquei de Empregador</a
+          >
           <p>Histórico</p>
           <a href="">Doações Enviadas</a><br />
           <a href="">Doações Recebidas</a><br />
@@ -212,6 +227,60 @@
       </div>
     </div>
   </form>
+</div>
+
+<div
+  class="offcanvas offcanvas-end"
+  tabindex="-1"
+  id="offcanvasChangePassword"
+  aria-labelledby="offcanvasChangePassword"
+>
+  <div class="offcanvas-header">
+    <h5 id="offcanvasChangePassword">Trocar Senha</h5>
+    <button
+      type="button"
+      class="btn-close text-reset"
+      data-bs-dismiss="offcanvas"
+      aria-label="Close"
+    ></button>
+  </div>
+  <div class="offcanvas-body">...</div>
+</div>
+
+<div
+  class="offcanvas offcanvas-end"
+  tabindex="-1"
+  id="offcanvasEditUser"
+  aria-labelledby="offcanvasEditUserl"
+>
+  <div class="offcanvas-header">
+    <h5 id="offcanvasEditUser">Editar Usuário</h5>
+    <button
+      type="button"
+      class="btn-close text-reset"
+      data-bs-dismiss="offcanvas"
+      aria-label="Close"
+    ></button>
+  </div>
+  <div class="offcanvas-body">...</div>
+</div>
+
+<div
+  class="offcanvas offcanvas-end"
+  tabindex="-1"
+  id="offcanvasChangedEmployer"
+  aria-labelledby="offcanvasChangedEmployer"
+>
+  <div class="offcanvas-header">
+    <h5 id="offcanvasChangedEmployer">Troquei de Empregador</h5>
+    <button
+      type="button"
+      class="btn-close text-reset"
+      data-bs-dismiss="offcanvas"
+      aria-label="Close"
+    ></button>
+  </div>
+  <div class="offcanvas-body">...</div>
 </div>
 
 <app-footer></app-footer>
