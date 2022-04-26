@@ -1,1 +1,105 @@
-<p>signup works!</p>
+<app-navbar></app-navbar>
+
+<div class="container mt-5" style="position: relative">
+  <div class="section-title">
+    <h2>Criar uma conta</h2>
+    <p>
+      Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex
+      aliquid fuga eum quidem.
+    </p>
+  </div>
+  <div class="row align-items-center">
+    <div class="col-lg-6">
+      <div class="mb-3">
+        <label for="name" class="form-label">Nome</label>
+        <input
+          class="form-control"
+          type="text"
+          id="name"
+          [formControl]="name"
+        />
+      </div>
+    </div>
+    <div class="col-lg-3">
+      <div class="mb-3">
+        <label for="password" class="form-label">Senha</label>
+        <input
+          class="form-control"
+          type="text"
+          id="password"
+          [formControl]="password"
+        />
+      </div>
+    </div>
+    <div class="col-lg-3">
+      <div class="mb-3">
+        <label for="repeatPassword" class="form-label">Confirmar Senha</label>
+        <input
+          class="form-control"
+          type="text"
+          id="repeatPassword"
+          [formControl]="repeatPassword"
+        />
+      </div>
+    </div>
+    <div class="col-lg-6">
+      <div class="mb-3">
+        <label for="email" class="form-label">Email</label>
+        <input
+          class="form-control"
+          type="text"
+          id="email"
+          [formControl]="email"
+        />
+      </div>
+    </div>
+    <div class="col-lg-3">
+      <div class="mb-3">
+        <label for="rg" class="form-label">RG</label>
+        <input
+          class="form-control"
+          type="text"
+          id="rg"
+          mask="00.000.000-0"
+          [formControl]="rg"
+        />
+      </div>
+    </div>
+    <div class="col-lg-3">
+      <div class="mb-3">
+        <label for="cpf" class="form-label">CPF</label>
+        <input
+          class="form-control"
+          type="text"
+          id="cpf"
+          mask="000.000.000-00"
+          [formControl]="cpf"
+        />
+      </div>
+    </div>
+    <div class="col-lg-6">
+      <div class="mb-3">
+        <label for="job" class="form-label">Ocupação</label>
+        <input class="form-control" type="text" id="job" [formControl]="job" />
+      </div>
+    </div>
+    <div class="col-lg-6">
+      <div class="mb-3">
+        <label for="employerId" class="form-label">Parceiro</label>
+        <select class="form-select" id="employerId" [formControl]="employerId">
+          <option value="1">Santa Casa de Araras</option>
+          <option value="2">Hospital Unimed Araras</option>
+          <option value="3">Hospital Pró-Saúde</option>
+          <option value="4">UPA 24 horas - Elisa Sbrissa Franchozza</option>
+          <option value="5">Dispensário da Saúde Araras</option>
+        </select>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container mt-4 mb-5">
+  <button class="btn btn-primary" style="margin-right: 10px">Cadastrar</button>
+  <button class="btn btn-outline-primary" (click)="clearForm()">Limpar</button>
+</div>
+
+<app-footer></app-footer>

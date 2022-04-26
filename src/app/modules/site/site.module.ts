@@ -13,6 +13,7 @@ import { FaqComponent } from './components/faq/faq.component';
 import { WhatWeDoComponent } from './components/what-we-do/what-we-do.component';
 import { AboutUsComponent } from './components/about-us/about-us.component';
 import { NavbarSiteComponent } from './components/navbar-site/navbar-site.component';
+import { NgxMaskModule } from 'ngx-mask';
 
 @NgModule({
   declarations: [
@@ -32,6 +33,7 @@ import { NavbarSiteComponent } from './components/navbar-site/navbar-site.compon
     HttpClientModule,
     SharedModule,
     SiteRoutingModule,
+    NgxMaskModule.forChild(),
   ],
 })
 export class SiteModule {}
